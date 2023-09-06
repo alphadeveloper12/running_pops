@@ -2,6 +2,7 @@ body{
     background-image: url('../images/main_screen/BG.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 nav{
     background: #8AC3E0;

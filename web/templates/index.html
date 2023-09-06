@@ -69,13 +69,13 @@
             </div>
         </div>
         <div class="row hero_first_div">
-            <div class="col-md-4">
+            <div class="col-md-4" id="download">
                 <img src="{% static 'images/main_screen/download now.png' %}">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="claim_benefits">
                 <img src="{% static 'images/main_screen/claim benifits.png' %}">
             </div>
-            <div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex" id="about_us">
                 <img src="{% static 'images/main_screen/Group 4.png' %}">
                 <img id="police" src="{% static 'images/main_screen/police.png' %}">
             </div>
@@ -84,19 +84,23 @@
 </div>
 <script>
     // Create a GSAP timeline
-    var timeline1 = gsap.timeline();
+    var timeline1 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
     var timeline2 = gsap.timeline();
+    var timeline4 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
+    var timeline3 = gsap.timeline();
+    let tl = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true})
 
     // Animation 1: Move #myElement1 to the right by 100 pixels over 1 second
     timeline1.to("#actionPlan", {y: 100, duration: 1});
-
-    // Animation 2: Move #myElement2 downward by 50 pixels over 1 second,
-    // but start it 0.5 seconds before the previous animation ends
     timeline1.to("#playNow", {x: 100, y: 20, duration: 1}, "-=0.5");
     timeline2.to("#cloud1", {y: 100, duration: 1}, "-=0.5");
     timeline2.to("#cloud2", {y: 100, duration: 1}, "-=0.5");
-    timeline2.to("#police", {x: -100, duration: 1}, "-=0.5");
-    timeline2.to("#main_img", {y: -100, duration: 1}, "-=0.5");
+    tl.to("#police", {x: -130,y:-100, duration: 1,}, "-=0.5");
+    timeline3.to("#claim_benefits", {y: -160, duration: 1}, "-=0.5");
+    timeline3.to("#about_us", {y: -250, duration: 1}, "-=0.5");
+    timeline3.to("#download", {y: -250,x:-200, duration: 1}, "-=0.5");
+    timeline4.to("#main_img", {x:100, duration: 1}, "-=0.5");
+    {#timeline2.to("#main_img", {y: -100, duration: 1}, "-=0.5");#}
 
 </script>
 </body>
