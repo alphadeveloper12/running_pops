@@ -65,7 +65,7 @@
         </div>
         <div class="row hero_first_div">
             <div class="col-md-12">
-                <img src="{% static 'images/main_screen/running pops.png' %}">
+                <img id="main_img" src="{% static 'images/main_screen/running pops.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -96,6 +96,7 @@
     timeline2.to("#cloud1", {y: 100, duration: 1}, "-=0.5");
     timeline2.to("#cloud2", {y: 100, duration: 1}, "-=0.5");
     timeline2.to("#police", {x: -100, duration: 1}, "-=0.5");
+    timeline2.to("#main_img", {y: -100, duration: 1}, "-=0.5");
 
 </script>
 </body>
