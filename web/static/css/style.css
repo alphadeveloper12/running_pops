@@ -7,3 +7,35 @@ body{
 nav{
     background: #8AC3E0;
 }
+#actionPlan img{
+    height: 10vh;
+}
+#playNow img{
+    height: 15vh;
+}
+#cloud1 img{
+    height: 10vh;
+}
+#cloud2 img{
+    height: 10vh;
+}
+#main_img img{
+    height: 60vh;
+}
+#download img{
+    height: 10vh;
+}
+#claim_benefits img{
+    height: 15vh;
+}
+#about_us img{
+    height: 20vh;
+}
+.nav-item a img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.nav-item a {
+    cursor: pointer;
+}

@@ -30,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="{% static 'images/main_screen/discord.png' %}"></a>
+                    <a class="nav-link" href="https://discord.com/invite/dWPxMfcWWU" target="_blank"><img src="{% static 'images/main_screen/discord.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="{% static 'images/main_screen/twitter.png' %}"></a>
+                    <a class="nav-link" href="https://twitter.com/runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/twitter.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="{% static 'images/main_screen/instagram.png' %}"></a>
+                    <a class="nav-link" href="https://www.instagram.com/runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/instagram.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="{% static 'images/main_screen/tiktok.png' %}"></a>
+                    <a class="nav-link" href="https://www.tiktok.com/@runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/tiktok.png' %}"></a>
                 </li>
             </ul>
         </div>
@@ -64,8 +64,8 @@
             </div>
         </div>
         <div class="row hero_first_div">
-            <div class="col-md-12">
-                <img id="main_img" src="{% static 'images/main_screen/running pops.png' %}">
+            <div class="col-md-12" id="main_img">
+                <img  src="{% static 'images/main_screen/running pops.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -91,15 +91,15 @@
     let tl = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true})
 
     // Animation 1: Move #myElement1 to the right by 100 pixels over 1 second
-    timeline1.to("#actionPlan", {y: 100, duration: 1});
-    timeline1.to("#playNow", {x: 100, y: 20, duration: 1}, "-=0.5");
-    timeline2.to("#cloud1", {y: 100, duration: 1}, "-=0.5");
-    timeline2.to("#cloud2", {y: 100, duration: 1}, "-=0.5");
-    tl.to("#police", {x: -130,y:-100, duration: 1,}, "-=0.5");
-    timeline3.to("#claim_benefits", {y: -160, duration: 1}, "-=0.5");
-    timeline3.to("#about_us", {y: -250, duration: 1}, "-=0.5");
-    timeline3.to("#download", {y: -250,x:-200, duration: 1}, "-=0.5");
-    timeline4.to("#main_img", {x:100, duration: 1}, "-=0.5");
+    timeline1.to("#actionPlan", {y: 20, duration: 1});
+    timeline2.to("#playNow", {x: 500, y: 20, duration: 1}, "-=0.5");
+    timeline2.to("#cloud1", {y: 50,x:100, duration: 1}, "-=0.5");
+    timeline2.to("#cloud2", {y: 20,x:200, duration: 1}, "-=0.5");
+    tl.to("#police", {x: -70,y:-50, duration: 1,}, "-=0.5");
+    timeline3.to("#claim_benefits", {y: -100, duration: 1}, "-=0.5");
+    timeline3.to("#about_us", {y: -150, duration: 1}, "-=0.5");
+    timeline3.to("#download", {y: -100,x:-100, duration: 1}, "-=0.5");
+    timeline4.to("#main_img", {x:50, duration: 1}, "-=0.5");
     {#timeline2.to("#main_img", {y: -100, duration: 1}, "-=0.5");#}
 
 </script>
