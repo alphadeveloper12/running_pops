@@ -16,9 +16,8 @@ def whitelist(request):
 
 def submit_wallet(request):
     if request.method == 'POST':
-        print('asdfdf')
         data = request.POST  # Use request.POST (uppercase) to access the POST data
-        wallet = NFTWalletForm(wallet_address=data['wallet'], email=data['email'])
+        wallet = NFTWalletForm(wallet_address=data['wallet'])
         try:
             wallet.save()
             print('wdeer')

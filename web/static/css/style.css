@@ -1,41 +1,108 @@
-body{
+body {
     background-image: url('../images/main_screen/BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
-nav{
+
+nav {
     background: #8AC3E0;
 }
-#actionPlan img{
+
+#actionPlan img {
     height: 10vh;
 }
-#playNow img{
+
+#playNow img {
     height: 15vh;
 }
-#cloud1 img{
+
+#cloud1 img {
     height: 10vh;
 }
-#cloud2 img{
+
+#cloud2 img {
     height: 10vh;
 }
-#main_img img{
+
+#main_img img {
     height: 60vh;
 }
-#download img{
+
+#download img {
     height: 10vh;
 }
-#claim_benefits img{
+
+#claim_benefits img {
     height: 15vh;
 }
-#about_us img{
+
+#about_us img {
     height: 20vh;
 }
-.nav-item a img{
+
+.nav-item a img {
     height: 40px;
     width: 40px;
     cursor: pointer;
 }
+
 .nav-item a {
     cursor: pointer;
+}
+
+.whitelist_body {
+    background-image: url(../images/whitelist/background.png);
+}
+
+#magic_sticks img {
+    width: 100%;
+    padding: 20px;
+}
+#running_pops{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#running_pops img{
+height: 30px;
+}
+#version img{
+    height: 70px;
+}
+#form{
+    z-index: 10;
+}
+#form img{
+    height: 35px;
+    margin-top: 35px;
+}
+#main_element{
+    /*height: 40%;*/
+    display: flex;
+    justify-content: end;
+}
+#main_element img{
+    height: 40%;
+}
+#background_mountain{
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+#swords{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+#swords img{
+    height: 300px;
+}
+.alert-success{
+    background: none;
+    border: none;
+}
+.alert-success ul{
+    list-style: none;
+
 }

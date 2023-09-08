@@ -19,7 +19,7 @@ def export_as_csv(modeladmin, request, queryset):
 export_as_csv.short_description = "Export selected records as CSV"
 
 class NFTWalletFormAdmin(admin.ModelAdmin):
-    list_display = ('wallet_address', 'email')  # Define the fields to display in the admin list view
+    list_display = ('wallet_address',)  # Define the fields to display in the admin list view, note the comma
     actions = [export_as_csv]
 
 # Register the NFTWalletForm model and its admin class
