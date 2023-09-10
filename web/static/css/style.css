@@ -53,6 +53,7 @@ nav {
 
 .whitelist_body {
     background-image: url(../images/whitelist/background.png);
+    height: 100vh!important;
 }
 
 #magic_sticks img {
@@ -92,7 +93,7 @@ height: 30px;
 }
 #swords{
     position: absolute;
-    bottom: 20px;
+    bottom: 20%;
     z-index: -1;
     right: 0;
 }
@@ -106,4 +107,26 @@ height: 30px;
 .alert-success ul{
     list-style: none;
 
+}
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    #swords{
+   top: 70%;
+   /* right: 50%; */
+}
+#swords img{
+    height: 150px;
+}
+#running_pops img{
+    height: 10px;
+}
+#version img{
+    height: 30px;
+}
+#form img{
+    height: 20px;
+}
+}
+
+#version{
+    margin-bottom: 50px;
 }
