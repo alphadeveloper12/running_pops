@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    height: 100vh;
 }
 
 nav {
@@ -53,80 +54,169 @@ nav {
 
 .whitelist_body {
     background-image: url(../images/whitelist/background.png);
-    height: 100vh!important;
+    height: 100vh !important;
 }
 
 #magic_sticks img {
     width: 100%;
     padding: 20px;
 }
-#running_pops{
+
+#running_pops {
     display: flex;
     justify-content: end;
     align-items: center;
 }
-#running_pops img{
-height: 30px;
+
+#running_pops img {
+    height: 30px;
 }
-#version img{
+
+#version img {
     height: 70px;
 }
-#form{
+
+#form {
     z-index: 10;
 }
-#form img{
+
+#form img {
     height: 35px;
     margin-top: 35px;
 }
-#main_element{
+
+#main_element {
     /*height: 40%;*/
     display: flex;
     justify-content: end;
 }
-#main_element img{
+
+#main_element img {
     height: 40%;
 }
-#background_mountain{
+
+#background_mountain {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     z-index: -1;
 }
-#swords{
+
+#swords {
     position: absolute;
     bottom: 20%;
     z-index: -1;
     right: 0;
 }
-#swords img{
+
+#swords img {
     height: 300px;
 }
-.alert-success{
+
+.alert-success {
     background: none;
     border: none;
 }
-.alert-success ul{
+
+.alert-success ul {
     list-style: none;
 
 }
-@media only screen and (min-width: 200px) and (max-width: 600px) {
-    #swords{
-   top: 70%;
-   /* right: 50%; */
-}
-#swords img{
-    height: 150px;
-}
-#running_pops img{
-    height: 10px;
-}
-#version img{
-    height: 30px;
-}
-#form img{
-    height: 20px;
-}
+
+.mobile_container {
+    display: none;
 }
 
-#version{
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .desktop_container {
+        display: none !important;
+    }
+.navbar-toggler{
+    display: none!important;
+}
+.navbar-collapse{
+    display: block!important;
+}
+.navbar-collapse ul{
+    display: flex;
+    flex-direction: inherit;
+}
+.navbar-collapse ul li{
+    margin: 5px;
+}
+    .mobile_container {
+        display: block;
+    }
+
+    #swords {
+        top: 70%;
+        /* right: 50%; */
+    }
+
+    #swords img {
+        height: 150px;
+    }
+
+    #running_pops img {
+        height: 10px;
+    }
+
+    #version img {
+        height: 30px;
+    }
+
+    #form img {
+        height: 20px;
+    }
+}
+
+#version {
     margin-bottom: 50px;
+}
+
+/*MObile New*/
+#actionPlan_mobile{
+    display: flex;
+    justify-content: start;
+}
+#actionPlan_mobile img{
+    height: 10vh;
+}
+#playNow_mobile{
+    display: flex;
+    justify-content: end;
+}
+#playNow_mobile img{
+    height: 15vh;
+}
+#cloud1_mobile img{
+    height: 5vh;
+}
+#cloud2_mobile img{
+    height: 5vh;
+}
+#cloud2_mobile{
+    display: flex;
+    justify-content: end;
+}
+#main_img_mobile img{
+    height: 15vh;
+}
+#download_mobile{
+    display: flex;justify-content: start;
+}
+#claim_benefits_mobile{
+    display: flex;
+    justify-content: center;
+}
+#about_us_mobile{
+    display: flex;justify-content: end;
+}
+#download_mobile img{
+    height: 8vh;
+}
+#claim_benefits_mobile img{
+    height: 8vh;
+}
+#about_us_mobile{
+    height: 8vh;
 }
