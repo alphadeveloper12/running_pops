@@ -13,6 +13,9 @@ def home(request):
 def whitelist(request):
     return render(request, 'whitelist.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 
 def submit_wallet(request):
     if request.method == 'POST':

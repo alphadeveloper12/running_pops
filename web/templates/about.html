@@ -21,96 +21,39 @@
 
 
 </head>
-<body class="whitelist_body">
-<div>
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-12" id="magic_sticks">
-                <img src="{% static 'images/whitelist/magic_sticks.png' %}"/>
+<body class="about_body">
+<div class="container-fluid about_hero">
+    <div class="row about_hero_main_row">
+        <div class="col-md-3">
+            <img src="{% static 'images/about/desktop/Jatpack_Popsi.png' %}">
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/about/desktop/a little bit of history.png' %}">
+            <h2 style="text-align: start; margin-top: 20px">
+                A Little Bit Of History Running Pops, a game developed and designed by Game Hype, was launched on iOS
+                and Android in November 2022, garnering an impressive 300k overall downloads. Now, with the transition
+                to Web3, users will have the exciting opportunity to play with their NFTs directly within the game.
+                Through a transformative process, the 2D NFTs will be brought to life in a 3D format, enabling players
+                to fully immerse themselves in the gameplay experience. Get ready to take your NFTs for a run in the
+                world of Running Pops!
+            </h2>
+            <div class="d-flex justify-content-center" style="margin-top: 50px">
+                <button class="about_play_button">Play Now</button>
+                <button class="about_download_button">Download Now</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12" id="running_pops">
-                <img src="{% static 'images/whitelist/BY.png' %}"/>
-                <img id="running_pops_img" src="{% static 'images/whitelist/running_pops.png' %}"/>
-            </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row about_tournament_row">
+        <div class="col-md-12 d-flex justify-content-center">
+            <img src="{% static 'images/about/desktop/tournaments.png' %}">
         </div>
         <div class="row">
-            <div class="col-md-12" id="version">
-                <img src="{% static 'images/whitelist/version.png' %}"/>
-            </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12" id="form">
-                <img src="{% static 'images/whitelist/submit_image.png' %}"/>
-                {% if messages %}
-                    <div class="alert alert-success">
-                        <ul>
-                            {% for message in messages %}
-                                <li>{{ message }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endif %}
-                <form style="margin-top: 30px" action="{% url 'add-wallet' %}" method="post">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <input type="text" name="wallet" required class="form-control" id="exampleInputEmail1"
-                               aria-describedby="emailHelp"
-                               placeholder="Enter Wallet Address">
-                    </div>
-
-
-                    <button style="background: #d56c04;margin-top: 20px; border: none;box-shadow:-1px 2px 6px 3px hwb(0 0% 50% / 1);"
-                            type="submit" class="btn btn-primary">Submit
-                    </button>
-                </form>
-            </div>
-            {#            <div class="col-md-6" id="main_element">#}
-            {#                <img id="main_element_img" src="{% static 'images/whitelist/main_element.png' %}"/>#}
-            {#            </div>#}
-        </div>
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-end" id="swords">
-                <img src="{% static 'images/whitelist/Inserted Image-1.png' %}"/>
-                <img src="{% static 'images/whitelist/Inserted Image-3.png' %}"/>
-                <img src="{% static 'images/whitelist/Inserted Image-2.png' %}"/>
-                <img src="{% static 'images/whitelist/Inserted Image.png' %}"/>
-
-
-            </div>
-        </div>
-
-
     </div>
 </div>
 
-<script>
-    var timeline1 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
-    var timeline2 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
-    var timeline3 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
-    var timeline4 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
-    timeline1.to("#running_pops_img", {x: 20, duration: 1});
-    timeline2.to("#main_element_img", {y: -100, duration: 1});
-    timeline3.to("#swords", {opacity: 0, duration: 1});
-    timeline4.to("#background_mountain", {opacity: 0, duration: 1});
-    // Get a reference to the element you want to fade out
-    const elementToFadeOut = document.getElementById('elementToFadeOut');
-
-    // Create a GSAP timeline
-    const tl = gsap.timeline();
-
-    // Add a fade-out animation to the timeline
-    tl.to(elementToFadeOut, {
-        opacity: 0, // Set the target opacity to 0 (fully transparent)
-        duration: 1, // Animation duration in seconds
-        onComplete: () => {
-            // Optional callback function to execute when the animation is complete
-            console.log('Fade-out animation complete');
-        },
-    });
-
-</script>
 
 </body>
 </html>
