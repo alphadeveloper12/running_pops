@@ -24,4 +24,6 @@ urlpatterns = [
     path('whitelist/', whitelist, name="whitelist"),
     path('submit_wallet/', submit_wallet, name="add-wallet"),
     path('about/', about, name="about"),
+    path('action/', action, name="action"),
+    path('tournament/', tournament, name="tournament"),
 ]

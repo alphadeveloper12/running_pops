@@ -16,7 +16,11 @@ def whitelist(request):
 def about(request):
     return render(request, 'about.html')
 
+def action(request):
+    return render(request, 'action.html')
 
+def tournament(request):
+    return render(request, 'tournament.html')
 def submit_wallet(request):
     if request.method == 'POST':
         data = request.POST  # Use request.POST (uppercase) to access the POST data

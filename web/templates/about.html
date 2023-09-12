@@ -22,38 +22,128 @@
 
 </head>
 <body class="about_body">
-<div class="container-fluid about_hero">
-    <div class="row about_hero_main_row">
-        <div class="col-md-3">
-            <img src="{% static 'images/about/desktop/Jatpack_Popsi.png' %}">
-        </div>
-        <div class="col-md-6">
-            <img src="{% static 'images/about/desktop/a little bit of history.png' %}">
-            <h2 style="text-align: start; margin-top: 20px">
-                A Little Bit Of History Running Pops, a game developed and designed by Game Hype, was launched on iOS
-                and Android in November 2022, garnering an impressive 300k overall downloads. Now, with the transition
-                to Web3, users will have the exciting opportunity to play with their NFTs directly within the game.
-                Through a transformative process, the 2D NFTs will be brought to life in a 3D format, enabling players
-                to fully immerse themselves in the gameplay experience. Get ready to take your NFTs for a run in the
-                world of Running Pops!
-            </h2>
-            <div class="d-flex justify-content-center" style="margin-top: 50px">
-                <button class="about_play_button">Play Now</button>
-                <button class="about_download_button">Download Now</button>
+<div class="about_desktop">
+    <div class="container-fluid about_hero">
+        <div class="row about_hero_main_row">
+            <div class="col-md-3">
+                <img src="{% static 'images/about/desktop/Jatpack_Popsi.png' %}">
+            </div>
+            <div class="col-md-9">
+                <img src="{% static 'images/about/desktop/a little bit of history.png' %}" style="height: 10vh">
+                <h2 style="text-align: start; margin-top: 20px;font-size: 20px;width: 90%">
+                    A Little Bit Of History Running Pops, a game developed and designed by Game Hype, was launched on
+                    iOS
+                    and Android in November 2022, garnering an impressive 300k overall downloads. Now, with the
+                    transition
+                    to Web3, users will have the exciting opportunity to play with their NFTs directly within the game.
+                    Through a transformative process, the 2D NFTs will be brought to life in a 3D format, enabling
+                    players
+                    to fully immerse themselves in the gameplay experience. Get ready to take your NFTs for a run in the
+                    world of Running Pops!
+                </h2>
+                <div class="d-flex justify-content-center" style="margin-top: 50px">
+                    <button class="about_play_button" onclick="location.href='{% url 'tournament' %}';">Play Now</button>
+                    <button class="about_download_button">Download Now</button>
+                </div>
             </div>
         </div>
-        <div class="col-md-3"></div>
     </div>
-    <div class="row about_tournament_row">
-        <div class="col-md-12 d-flex justify-content-center">
-            <img src="{% static 'images/about/desktop/tournaments.png' %}">
-        </div>
+    <div class="about_tournament_row">
         <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <img src="{% static 'images/about/desktop/tournaments.png' %}"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row" style="padding: 30px ">
+            <div class="col-md-6" style="padding-left: 30px">
+                <img src="{% static 'images/about/desktop/3rd_screen/call.png' %}"/>
+            </div>
+            <div class="col-md-2" style="border-right: 2px solid #000;">
+                <ul class="about_ul">
+                    <li><p>NOVEMBER 2022 - <br/> JAN 2023</p><span>THE WORLD CUP</span></li>
+                    <li><p>FEBRUARY 2023 - <br/> MAY 2023</p><span>THE RUNWAY 2.0</span></li>
+                    <li><p>JUNE 2023</p><span>THE RUNWAY 3.0</span></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="about_detail_ul">
+                    <li><p>The 2022 World Cup tournament drew 90k players, each representing their favorite teams total
+                        of $15k in prizes was distributed to the winners, amplifying the excitement of the event.</li>
+                    <li><p>By integrating NFTs and crypto prizes, our game, We achieved tremendous success with 100k new
+                        players. The average conversion rate of players to buyers reached 8%, intensifying the
+                        competition. Additionally, our webinars introduced the community to Web3 technology, further
+                        enhancing their engagement</li>
+                    <li><p>Runaway 3.0 is a Web3 tournament where NFT communities compete for big Matic prizes Top 5
+                        players win Matic rewards with exciting updates and new features on the way Get ready for an
+                        epic gaming experience!</p></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
-
-
+<div class="about_mobile">
+    <div class="container-fluid about_hero_mobile">
+        <div class="row about_hero_main_row">
+            <div class="col-md-12 d-flex justify-content-center" style="margin-top: 30px">
+                <img style="height: 40vh" src="{% static 'images/about/mobile/Jatpack_Popsi.png' %}">
+            </div>
+            <div class="col-md-12">
+                <img src="{% static 'images/about/mobile/a little bit of history.png' %}" style="height: 3vh">
+                <h2 style="text-align: start; margin-top: 20px;font-size: 12px;width: 90%">
+                    A Little Bit Of History Running Pops, a game developed and designed by Game Hype, was launched on
+                    iOS
+                    and Android in November 2022, garnering an impressive 300k overall downloads. Now, with the
+                    transition
+                    to Web3, users will have the exciting opportunity to play with their NFTs directly within the game.
+                    Through a transformative process, the 2D NFTs will be brought to life in a 3D format, enabling
+                    players
+                    to fully immerse themselves in the gameplay experience. Get ready to take your NFTs for a run in the
+                    world of Running Pops!
+                </h2>
+                <div class="d-flex justify-content-center" style="margin-top: 50px">
+                    <button class="about_play_button" onclick="location.href='{% url 'tournament' %}';">Play Now</button>
+                    <button class="about_download_button">Download Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about_tournament_row_mobile">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <img style="height: 4vh" src="{% static 'images/about/mobile/tournaments.png' %}"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row" style="padding: 30px ">
+            <div class="col-12" style="padding-left: 30px">
+                <img style="height: 25vh" src="{% static 'images/about/desktop/3rd_screen/call.png' %}"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" style="border-right: 2px solid #000;">
+                <ul class="about_ul">
+                    <li><p>NOVEMBER 2022 - <br/> JAN 2023</p><span>THE WORLD CUP</span></li>
+                    <li><p>FEBRUARY 2023 - <br/> MAY 2023</p><span>THE RUNWAY 2.0</span></li>
+                    <li><p>JUNE 2023</p><span>THE RUNWAY 3.0</span></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="about_detail_ul">
+                    <li><p>The 2022 World Cup tournament drew 90k players, each representing their favorite teams total
+                        of $15k in prizes was distributed to the winners, amplifying the excitement of the event.</li>
+                    <li><p>By integrating NFTs and crypto prizes, our game, We achieved tremendous success with 100k new
+                        players. The average conversion rate of players to buyers reached 8%, intensifying the
+                        competition. Additionally, our webinars introduced the community to Web3 technology, further
+                        enhancing their engagement</li>
+                    <li><p>Runaway 3.0 is a Web3 tournament where NFT communities compete for big Matic prizes Top 5
+                        players win Matic rewards with exciting updates and new features on the way Get ready for an
+                        epic gaming experience!</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>

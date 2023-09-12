@@ -50,11 +50,11 @@
 <div class="container desktop_container">
     <div>
         <div class="row hero_first_div">
-            <div class="col-md-6" id="actionPlan">
-                <img src="{% static 'images/main_screen/action plan.png' %}">
+            <div class="col-md-6" id="actionPlan" >
+                <img src="{% static 'images/main_screen/action plan.png' %}" onclick="location.href='{% url 'action' %}';">
             </div>
             <div class="col-md-6" id="playNow">
-                <img src="{% static 'images/main_screen/play now.png' %}">
+                <img src="{% static 'images/main_screen/play now.png' %}" onclick="location.href='{% url 'tournament' %}';">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -75,10 +75,10 @@
                 <img src="{% static 'images/main_screen/download now.png' %}">
             </div>
             <div class="col-md-4" id="claim_benefits">
-                <img src="{% static 'images/main_screen/claim benifits.png' %}">
+                <img src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'whitelist' %}';">
             </div>
             <div class="col-md-4 d-flex" id="about_us">
-                <img src="{% static 'images/main_screen/Group 4.png' %}">
+                <img src="{% static 'images/main_screen/Group 4.png' %}" onclick="location.href='{% url 'about' %}';">
                 <img id="police" src="{% static 'images/main_screen/police.png' %}">
             </div>
         </div>
@@ -88,10 +88,10 @@
     <div>
         <div class="row hero_first_div">
             <div class="col-md-6 col-sm-6 col-xs-6" id="actionPlan_mobile">
-                <img src="{% static 'images/main_screen/action plan.png' %}">
+                <img src="{% static 'images/main_screen/action plan.png' %}" onclick="location.href='{% url 'action' %}';">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6" id="playNow_mobile">
-                <img src="{% static 'images/main_screen/play now.png' %}">
+                <img src="{% static 'images/main_screen/play now.png' %}" onclick="location.href='{% url 'tournament' %}';">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -112,10 +112,10 @@
                 <img src="{% static 'images/main_screen/download now.png' %}">
             </div>
             <div class="col-md-4" id="claim_benefits_mobile">
-                <img src="{% static 'images/main_screen/claim benifits.png' %}">
+                <img src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'whitelist' %}';">
             </div>
             <div class="col-md-4 d-flex" id="about_us_mobile">
-                <img src="{% static 'images/main_screen/Group 4.png' %}">
+                <img src="{% static 'images/main_screen/Group 4.png' %}" onclick="location.href='{% url 'about' %}';">
                 <img id="police_mobile" src="{% static 'images/main_screen/police.png' %}">
             </div>
         </div>

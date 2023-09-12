@@ -4,6 +4,11 @@
     background-size: cover;
     overflow: hidden;
     height: 100vh;
+
+}
+
+body {
+    overflow-x: hidden;
 }
 
 nav {
@@ -126,9 +131,62 @@ nav {
     display: none;
 }
 
+.about_mobile {
+    display: none;
+}
+
+.action_mobile {
+    display: none;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .desktop_container {
         display: none !important;
+    }
+
+    .action_desktop {
+        display: none;
+    }
+
+    .action_mobile {
+        display: block;
+    }
+
+    .about_ul li {
+        margin-bottom: 70px !important;
+    }
+
+    .about_ul li p {
+        font-size: 14px !important;
+    }
+
+    .about_ul li span {
+        font-size: 14px !important;
+    }
+
+    .about_play_button {
+        height: 30px !important;
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+
+    .about_download_button {
+        height: 30px !important;
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+
+    .about_detail_ul li p {
+        font-size: 10px !important;
+        /*font-weight: 700;*/
+    }
+
+    .about_desktop {
+        display: none;
+    }
+
+    .about_mobile {
+        display: block;
     }
 
     .navbar-toggler {
@@ -243,7 +301,12 @@ nav {
 
 .about_hero {
     background-image: url(../images/about/desktop/bg.png) !important;
-    height: 100vh;
+    background-size: cover;
+}
+
+.about_hero_mobile {
+    background-image: url(../images/about/mobile/bg.png) !important;
+    background-size: cover;
 }
 
 .about_body {
@@ -256,23 +319,108 @@ nav {
     align-items: center;
     height: 100vh;
 }
-.about_play_button{
+
+.about_play_button {
     background: #04ccff;
-    padding: 20px 100px;
+
+    height: 50px;
+    width: 200px;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
     border: none;
 }
-.about_download_button{
+
+.about_download_button {
     background: #d06444;
-    padding: 20px 100px;
+    height: 50px;
+    width: 200px;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
     border: none;
     margin-left: 50px;
 }
-.about_tournament_row{
-    background-image:url(../images/about/desktop/3rd_screen/bg.png) ;
+
+.about_tournament_row {
+    background-image: url(../images/about/desktop/3rd_screen/bg.png);
+    /*height: 100%;*/
+    background-size: cover;
+    padding-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.about_tournament_row_mobile {
+    background-image: url(../images/about/mobile/3rd_screen/bg.png);
+    /*height: 100%;*/
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.about_ul {
+    list-style: none;
+}
+
+.about_ul li {
+    margin-bottom: 70px;
+}
+
+.about_ul li:nth-child(1) {
+    margin-top: 30px;
+}
+
+.about_ul li span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about_ul li p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about_detail_ul {
+    margin-right: 15px;
+}
+
+.about_detail_ul li {
+    margin: 35px 0px;
+    list-style: none;
+}
+
+.about_detail_ul li p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.action_hero_div {
+    background-image: url(../images/action/desktop/1st/bg.png);
+    background-size: cover;
+
+}
+
+.action_evalution_div {
+    background-image: url(../images/action/desktop/2nd/bg.png);
+    background-size: cover;
+}
+
+.action_development_div {
+    background-image: url(../images/action/desktop/3rd/bg.png);
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.development_div {
+    background-image: url(../images/action/desktop/3rd/Layer-1.png);
+    background-size: cover;
+    margin: 0px 50px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.action_bottom_div {
+    background-image: url(../images/action/desktop/4th/bg.png);
+    background-size: cover;
 }
