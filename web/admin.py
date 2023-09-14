@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import NFTWalletForm
+from .models import Wallet
 import csv
 from django.http import HttpResponse
 from django.utils.encoding import smart_str
@@ -18,9 +18,9 @@ def export_as_csv(modeladmin, request, queryset):
 
 export_as_csv.short_description = "Export selected records as CSV"
 
-class NFTWalletFormAdmin(admin.ModelAdmin):
+class WalletAdmin(admin.ModelAdmin):
     list_display = ('wallet_address',)  # Define the fields to display in the admin list view, note the comma
     actions = [export_as_csv]
 
-# Register the NFTWalletForm model and its admin class
-admin.site.register(NFTWalletForm, NFTWalletFormAdmin)
+# Register the Wallet model and its admin class
+admin.site.register(Wallet, WalletAdmin)
