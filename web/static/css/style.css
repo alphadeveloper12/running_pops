@@ -60,6 +60,8 @@ nav {
 .whitelist_body {
     background-image: url(../images/whitelist/background.png);
     height: 100vh !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #magic_sticks img {
@@ -138,7 +140,9 @@ nav {
 .action_mobile {
     display: none;
 }
-
+.action_development_div h3{
+    line-height: 28px;
+}
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .desktop_container {
         display: none !important;
@@ -153,7 +157,7 @@ nav {
     }
 
     .about_ul li {
-        margin-bottom: 70px !important;
+        margin-bottom: 80px !important;
     }
 
     .about_ul li p {
@@ -418,6 +422,14 @@ nav {
     margin: 0px 50px;
     padding: 50px;
     border-radius: 100px;
+}
+
+.development_div_mobile {
+    background:#fff;
+    background-size: cover;
+    margin: 0px 50px;
+    padding: 50px;
+    border-radius: 50px;
 }
 
 .action_bottom_div {

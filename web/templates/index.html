@@ -32,16 +32,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://discord.com/invite/dWPxMfcWWU" target="_blank"><img src="{% static 'images/main_screen/discord.png' %}"></a>
+                    <a class="nav-link" href="https://discord.com/invite/dWPxMfcWWU" target="_blank"><img
+                            src="{% static 'images/main_screen/discord.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/twitter.png' %}"></a>
+                    <a class="nav-link" href="https://twitter.com/runningpopsgame" target="_blank"><img
+                            src="{% static 'images/main_screen/twitter.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/instagram.png' %}"></a>
+                    <a class="nav-link" href="https://www.instagram.com/runningpopsgame" target="_blank"><img
+                            src="{% static 'images/main_screen/instagram.png' %}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.tiktok.com/@runningpopsgame" target="_blank"><img src="{% static 'images/main_screen/tiktok.png' %}"></a>
+                    <a class="nav-link" href="https://www.tiktok.com/@runningpopsgame" target="_blank"><img
+                            src="{% static 'images/main_screen/tiktok.png' %}"></a>
                 </li>
             </ul>
         </div>
@@ -49,37 +53,46 @@
 </nav>
 <div class="container desktop_container">
     <div>
-        <div class="row hero_first_div">
-            <div class="col-md-6" id="actionPlan" >
-                <img src="{% static 'images/main_screen/action plan.png' %}" onclick="location.href='{% url 'action' %}';">
-            </div>
-            <div class="col-md-6" id="playNow">
-                <img src="{% static 'images/main_screen/play now.png' %}" onclick="location.href='{% url 'tournament' %}';">
-            </div>
-        </div>
+{#        <div class="row hero_first_div">#}
+{#            <div class="col-md-6" id="actionPlan">#}
+{##}
+{#            </div>#}
+{#            <div class="col-md-6" id="playNow">#}
+{##}
+{#            </div>#}
+{#        </div>#}
         <div class="row hero_first_div">
             <div class="col-md-6" id="cloud1">
                 <img src="{% static 'images/main_screen/cloud1.png' %}">
+                <img src="{% static 'images/APPLY.png' %}" style="margin-left: 50px;height: 20vh;"
+                     onclick="location.href='{% url 'whitelist' %}';">
             </div>
             <div class="col-md-6" id="cloud2">
+                <img style="height: 20vh;margin-right: 40px" src="{% static 'images/main_screen/claim benifits.png' %}"
+                >
                 <img src="{% static 'images/main_screen/cloud 2.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
-            <div class="col-md-12" id="main_img">
-                <img  src="{% static 'images/main_screen/running pops.png' %}">
+            <div class="col-md-10" id="main_img">
+                <img src="{% static 'images/main_screen/running pops.png' %}">
+            </div>
+            <div class="col-md-2 d-flex justify-content-end" id="playNow">
+                <img style="height: 20vh" src="{% static 'images/main_screen/play now.png' %}"
+                     onclick="location.href='{% url 'tournament' %}';">
             </div>
         </div>
         <div class="row hero_first_div">
             <div class="col-md-4" id="download">
-                <img src="{% static 'images/main_screen/download now.png' %}">
+                <img style="height: 15vh" src="{% static 'images/main_screen/download now.png' %}">
             </div>
             <div class="col-md-4" id="claim_benefits">
-                <img src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'whitelist' %}';">
+                <img src="{% static 'images/main_screen/action plan.png' %}"
+                     onclick="location.href='{% url 'action' %}';">
             </div>
             <div class="col-md-4 d-flex" id="about_us">
                 <img src="{% static 'images/main_screen/Group 4.png' %}" onclick="location.href='{% url 'about' %}';">
-                <img id="police" src="{% static 'images/main_screen/police.png' %}">
+                <img style="height: 40vh" id="police" src="{% static 'images/main_screen/police.png' %}">
             </div>
         </div>
     </div>
@@ -88,10 +101,12 @@
     <div>
         <div class="row hero_first_div">
             <div class="col-md-6 col-sm-6 col-xs-6" id="actionPlan_mobile">
-                <img src="{% static 'images/main_screen/action plan.png' %}" onclick="location.href='{% url 'action' %}';">
+                <img src="{% static 'images/main_screen/action plan.png' %}"
+                     onclick="location.href='{% url 'action' %}';">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6" id="playNow_mobile">
-                <img src="{% static 'images/main_screen/play now.png' %}" onclick="location.href='{% url 'tournament' %}';">
+                <img src="{% static 'images/main_screen/play now.png' %}"
+                     onclick="location.href='{% url 'tournament' %}';">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -99,12 +114,14 @@
                 <img src="{% static 'images/main_screen/cloud1.png' %}">
             </div>
             <div class="col-md-6" id="cloud2_mobile">
+                <img src="{% static 'images/APPLY.png' %}" style="margin-right50px;height: 10vh;"
+                     onclick="location.href='{% url 'whitelist' %}';">
                 <img src="{% static 'images/main_screen/cloud 2.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
             <div class="col-md-12" id="main_img_mobile">
-                <img  src="{% static 'images/main_screen/running pops.png' %}">
+                <img src="{% static 'images/main_screen/running pops.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
@@ -112,11 +129,12 @@
                 <img src="{% static 'images/main_screen/download now.png' %}">
             </div>
             <div class="col-md-4" id="claim_benefits_mobile">
-                <img src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'whitelist' %}';">
+                <img src="{% static 'images/main_screen/claim benifits.png' %}"
+                >
             </div>
             <div class="col-md-4 d-flex" id="about_us_mobile">
                 <img src="{% static 'images/main_screen/Group 4.png' %}" onclick="location.href='{% url 'about' %}';">
-                <img id="police_mobile" src="{% static 'images/main_screen/police.png' %}">
+                <img style="height: 12vh" id="police_mobile" src="{% static 'images/main_screen/police.png' %}">
             </div>
         </div>
     </div>
@@ -131,19 +149,19 @@
 
     // Animation 1: Move #myElement1 to the right by 100 pixels over 1 second
     timeline1.to("#actionPlan", {y: 20, duration: 1});
-    timeline2.to("#playNow", {x: 500, y: 20, duration: 1}, "-=0.5");
-    timeline2.to("#cloud1", {y: 50,x:100, duration: 1}, "-=0.5");
-    timeline2.to("#cloud2", {y: 20,x:200, duration: 1}, "-=0.5");
-    tl.to("#police", {x: -70,y:-50, duration: 1,}, "-=0.5");
-    timeline3.to("#claim_benefits", {y: -100, duration: 1}, "-=0.5");
+    timeline2.to("#playNow", {x: 100, y: 20, duration: 1}, "-=0.5");
+    timeline2.to("#cloud1", {y: 50, x: 100, duration: 1}, "-=0.5");
+    timeline2.to("#cloud2", {y: 20, x: 200, duration: 1}, "-=0.5");
+    tl.to("#police", {x: -100, y: -100, duration: 1,}, "-=0.5");
+    timeline3.to("#claim_benefits", {x:50, y: -100, duration: 1}, "-=0.5");
     timeline3.to("#about_us", {y: -150, duration: 1}, "-=0.5");
-    timeline3.to("#download", {y: -100,x:-100, duration: 1}, "-=0.5");
-    timeline4.to("#main_img", {x:50, duration: 1}, "-=0.5");
+    timeline3.to("#download", {y: -80, x: 200, duration: 1}, "-=0.5");
+    timeline4.to("#main_img", {x: 50, duration: 1}, "-=0.5");
     {#timeline2.to("#main_img", {y: -100, duration: 1}, "-=0.5");#}
 
-{#    mobile screen#}
+    {#    mobile screen#}
 
-     var timeline_mobile1 = gsap.timeline();
+    var timeline_mobile1 = gsap.timeline();
     var timelinemobile2 = gsap.timeline();
     var timelinemobile4 = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true});
     var timelinemobile3 = gsap.timeline();
@@ -151,14 +169,14 @@
 
     // Animation 1: Move #myElement1 to the right by 100 pixels over 1 second
     timeline_mobile1.to("#actionPlan_mobile", {y: 80, duration: 1});
-    timeline_mobile1.to("#playNow_mobile", { y: -70, duration: 1}, "-=0.5");
+    timeline_mobile1.to("#playNow_mobile", {y: -70, duration: 1}, "-=0.5");
     timeline_mobile1.to("#cloud1_mobile", {y: 50, duration: 1}, "-=0.5");
-    timeline2.to("#cloud2", {y: 20,x:200, duration: 1}, "-=0.5");
-    tlmobile.to("#police_mobile", {x: -40,y:-20, duration: 1,}, "-=0.5");
+    timeline2.to("#cloud2", {y: 20, x: 200, duration: 1}, "-=0.5");
+    tlmobile.to("#police_mobile", {x: -40, y: -20, duration: 1,}, "-=0.5");
     timelinemobile3.to("#claim_benefits_mobile", {y: -50, duration: 1}, "-=0.5");
-    timelinemobile3.to("#about_us_mobile", {y: -180,x:10, duration: 1}, "-=0.5");
-    timeline3.to("#download", {y: -100,x:-100, duration: 1}, "-=0.5");
-    timelinemobile4.to("#main_img_mobile", {x:20, duration: 1}, "-=0.5");
+    timelinemobile3.to("#about_us_mobile", {y: -180, x: 10, duration: 1}, "-=0.5");
+    {#timeline3.to("#download", {y: -100,x:-100, duration: 1}, "-=0.5");#}
+    timelinemobile4.to("#main_img_mobile", {x: 20, duration: 1}, "-=0.5");
 
 </script>
 </body>
