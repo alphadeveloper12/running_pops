@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from .models import NFTWalletForm
+from .models import Wallet
 from django.contrib import messages
 # Create your views here.
 
@@ -24,7 +24,7 @@ def tournament(request):
 def submit_wallet(request):
     if request.method == 'POST':
         data = request.POST  # Use request.POST (uppercase) to access the POST data
-        wallet = NFTWalletForm(wallet_address=data['wallet'])
+        wallet = Wallet(wallet_address=data['wallet'])
         try:
             wallet.save()
             print('wdeer')
