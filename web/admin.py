@@ -3,6 +3,7 @@ from .models import Wallet
 import csv
 from django.http import HttpResponse
 from django.utils.encoding import smart_str
+from .models import Benefit
 
 def export_as_csv(modeladmin, request, queryset):
     response = HttpResponse(content_type='text/csv')
@@ -22,5 +23,12 @@ class WalletAdmin(admin.ModelAdmin):
     list_display = ('wallet_address',)  # Define the fields to display in the admin list view, note the comma
     actions = [export_as_csv]
 
+
+class BenefitAdmin(admin.ModelAdmin):
+    list_display = ('wallet_address', 'twitter_handle', 'nft_link_url', 'collection_name', 'message')
+    list_filter = ('collection_name',)  # Add any filters you want.
+    search_fields = ('wallet_address', 'collection_name',)  # Add fields to search by.
+
 # Register the Wallet model and its admin class
 admin.site.register(Wallet, WalletAdmin)
+admin.site.register(Benefit, BenefitAdmin)

@@ -140,9 +140,11 @@ nav {
 .action_mobile {
     display: none;
 }
-.action_development_div h3{
+
+.action_development_div h3 {
     line-height: 28px;
 }
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .desktop_container {
         display: none !important;
@@ -425,7 +427,7 @@ nav {
 }
 
 .development_div_mobile {
-    background:#fff;
+    background: #fff;
     background-size: cover;
     margin: 0px 50px;
     padding: 50px;
@@ -435,4 +437,47 @@ nav {
 .action_bottom_div {
     background-image: url(../images/action/desktop/4th/bg.png);
     background-size: cover;
+}
+
+.about_div_text p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about_div_text span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about_div_text_detail p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about_div_text {
+    padding: 20px;
+}
+
+.about_div_text_detail {
+    padding: 20px;
+}
+
+form .form-group {
+    margin: 20px;
+}
+
+form .form-group label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+form .form-group input {
+    background: #000;
+    border: 1px solid #fff !important;
+}
+
+form .form-group textarea {
+    background: #000;
+    border: 1px solid #fff;
 }

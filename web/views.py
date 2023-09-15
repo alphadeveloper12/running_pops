@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from .models import Wallet
+from .models import Wallet, Benefit
 from django.contrib import messages
 # Create your views here.
 
@@ -21,6 +21,25 @@ def action(request):
 
 def tournament(request):
     return render(request, 'tournament.html')
+
+def benefits(request):
+    return render(request, 'benefits.html')
+
+def benefits_form(request):
+    if request.method == 'POST':
+        data = request.POST  # Use request.POST (uppercase) to access the POST data
+        benefit = Benefit(wallet_address=data['wallet_address'],twitter_handle=data['twitter_handler'],nft_link_url=data['nft_link'],collection_name=data['collection_name'],message=data['message'])
+        try:
+            benefit.save()
+            messages.success(request, 'your details got submitted, now our team will start the process transforming your 2D pfp into a 3D pfp, you will get notified by email once its done to claim it.')
+            return redirect('benefits_form')
+        except ValidationError as e:
+            messages.error(request, f"Error adding benefit: {e}")
+            return render(request, 'benefit_form.html')
+
+        return redirect('benefits_form')
+    else:
+        return render(request, 'benefit_form.html')
 def submit_wallet(request):
     if request.method == 'POST':
         data = request.POST  # Use request.POST (uppercase) to access the POST data

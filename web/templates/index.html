@@ -62,25 +62,26 @@
 {#            </div>#}
 {#        </div>#}
         <div class="row hero_first_div">
-            <div class="col-md-6" id="cloud1">
+            <div class="col-md-4" id="cloud1">
                 <img src="{% static 'images/main_screen/cloud1.png' %}">
                 <img src="{% static 'images/APPLY.png' %}" style="margin-left: 50px;height: 20vh;"
                      onclick="location.href='{% url 'whitelist' %}';">
             </div>
-            <div class="col-md-6" id="cloud2">
-                <img style="height: 20vh;margin-right: 40px" src="{% static 'images/main_screen/claim benifits.png' %}"
-                >
+             <div class="col-md-2 d-flex justify-content-end" id="playNow">
+                <img style="height: 20vh" src="{% static 'images/main_screen/play now.png' %}"
+                     onclick="location.href='{% url 'tournament' %}';">
+            </div>
+            <div class="col-md-4" id="cloud2">
+                <img style="height: 20vh;margin-right: 40px" src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'benefits' %}';"
+                />
                 <img src="{% static 'images/main_screen/cloud 2.png' %}">
             </div>
         </div>
         <div class="row hero_first_div">
-            <div class="col-md-10" id="main_img">
+            <div class="col-md-12" id="main_img">
                 <img src="{% static 'images/main_screen/running pops.png' %}">
             </div>
-            <div class="col-md-2 d-flex justify-content-end" id="playNow">
-                <img style="height: 20vh" src="{% static 'images/main_screen/play now.png' %}"
-                     onclick="location.href='{% url 'tournament' %}';">
-            </div>
+
         </div>
         <div class="row hero_first_div">
             <div class="col-md-4" id="download">
@@ -129,7 +130,7 @@
                 <img src="{% static 'images/main_screen/download now.png' %}">
             </div>
             <div class="col-md-4" id="claim_benefits_mobile">
-                <img src="{% static 'images/main_screen/claim benifits.png' %}"
+                <img src="{% static 'images/main_screen/claim benifits.png' %}" onclick="location.href='{% url 'benefits' %}';"
                 >
             </div>
             <div class="col-md-4 d-flex" id="about_us_mobile">

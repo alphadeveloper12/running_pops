@@ -26,4 +26,6 @@ urlpatterns = [
     path('about/', about, name="about"),
     path('action/', action, name="action"),
     path('tournament/', tournament, name="tournament"),
+    path('benefits/', benefits, name="benefits"),
+    path('benefits_form/', benefits_form, name="benefits_form"),
 ]
