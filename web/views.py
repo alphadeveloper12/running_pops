@@ -46,7 +46,6 @@ def submit_wallet(request):
         wallet = Wallet(wallet_address=data['wallet'])
         try:
             wallet.save()
-            print('wdeer')
             messages.success(request, 'Wallet added successfully.')
             return redirect('whitelist')
         except ValidationError as e:
