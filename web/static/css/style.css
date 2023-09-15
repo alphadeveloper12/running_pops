@@ -145,9 +145,21 @@ nav {
     line-height: 28px;
 }
 
+.desktop_mobile {
+    display: none;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .desktop_container {
         display: none !important;
+    }
+
+    .desktop_mobile {
+        display: block;
+    }
+
+    .desktop_benefits {
+        display: none;
     }
 
     .action_desktop {

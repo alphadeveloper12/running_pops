@@ -22,7 +22,7 @@
 
 </head>
 <body style="background: #000">
-<div class="container-fluid">
+<div class="container-fluid desktop_benefits">
     <div class="row">
         <h2 style="font-size: 30px; color: #fff; font-weight: 700; text-align: center;padding: 20px">Claim Your Sticks
             Benefits</h2>
@@ -60,6 +60,55 @@
                         Claim Your Animations
                     </h2>
                     <p style="color: #fff; font-size: 16px;margin-top: 20px">
+                       After transforming your 2D NFT into a #D version, please submit the form to customize five animations of your choice, ranging from GM to Good Night, dancing, or jumping etc. Provide our team with maximum information to tailor your order accordingly.
+                    </p>
+                    <button onclick="location.href='{% url 'benefits_form' %}';"
+                            style="background: #000; color: blue; border: 1px solid blue; font-size: 14px; font-weight: 500; padding: 10px;margin-bottom: 20px">
+                        Claim Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid desktop_mobile">
+    <div class="row">
+        <h2 style="font-size: 30px; color: #fff; font-weight: 700; text-align: center;padding: 20px">Claim Your Sticks
+            Benefits</h2>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-12" style="width: 80%; height: auto; border: 1px solid #fff;padding: 0px">
+            <div class="row">
+                <div class="col-4" style="width: 100px; height: 100px">
+                    <img src="{% static 'images/transform.png' %}"style="width: 100px; height: 100px">
+                </div>
+                <div class="col-8" style="padding:0px 40px ">
+                    <h2 style="color: #fff; font-size: 12px; font-weight: 700; margin-top: 20px">
+                        Transform Your 2D NFT To 3D
+                    </h2>
+                    <p style="color: #fff; font-size: 10px;margin-top: 20px">
+                        By submitting your 2D NFT image or link,our team will ensure that your NFT is transformed into a
+                        3D model that can be played inside the game as well your 5 animations.
+                    </p>
+                    <button onclick="location.href='{% url 'benefits_form' %}';"
+                            style="background: #000; color: blue; border: 1px solid blue; font-size: 14px; font-weight: 500; padding: 10px;margin-bottom: 20px">
+                        Claim Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center"style="margin-top: 50px">
+        <div class="col-12" style="width: 80%; height: auto; border: 1px solid #fff;padding: 0px">
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static 'images/animation.png' %}" style="width: 100px; height: 100px">
+                </div>
+                <div class="col-8" style="padding:0px 40px ">
+                    <h2 style="color: #fff; font-size: 12px; font-weight: 700; margin-top: 20px">
+                        Claim Your Animations
+                    </h2>
+                    <p style="color: #fff; font-size: 10px;margin-top: 20px">
                        After transforming your 2D NFT into a #D version, please submit the form to customize five animations of your choice, ranging from GM to Good Night, dancing, or jumping etc. Provide our team with maximum information to tailor your order accordingly.
                     </p>
                     <button onclick="location.href='{% url 'benefits_form' %}';"
