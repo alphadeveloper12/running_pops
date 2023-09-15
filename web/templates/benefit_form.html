@@ -34,17 +34,58 @@
     <div style="display: flex;justify-content: center">
 
 
-        <form style="width: 50%; margin-top: 50px" method="post" action="{% url 'benefits_form' %}">
+        <form class="form_desktop" style="width: 50%; margin-top: 50px" method="post" action="{% url 'benefits_form' %}">
             {% csrf_token %}
             {% if messages %}
-            <div style="background: lightgreen" class="alert alert-success">
-                <ul>
-                    {% for message in messages %}
-                        <li>{{ message }}</li>
-                    {% endfor %}
-                </ul>
+                <div style="background: lightgreen" class="alert alert-success">
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your Wallet Address*</label>
+                <input required type="text" name="wallet_address" class="form-control" id="exampleFormControlInput1"
+                >
             </div>
-        {% endif %}
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Twitter Handle</label>
+                <input type="text" class="form-control" name="twitter_handler" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your NFT Link(To Be Designed)*</label>
+                <input required type="url" class="form-control" name="nft_link" id="exampleFormControlInput1"
+                >
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Collection Name*</label>
+                <input required type="text" class="form-control" name="collection_name" id="exampleFormControlInput1"
+                >
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Leave us a message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <input style="background: blue; border: none!important; color: #000" type="submit" class="form-control"
+                       value="Submit">
+            </div>
+
+
+        </form>
+        <form class="form_mobile" style="width: 90%; margin-top: 50px" method="post" action="{% url 'benefits_form' %}">
+            {% csrf_token %}
+            {% if messages %}
+                <div style="background: lightgreen" class="alert alert-success">
+                    <ul>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
             <div class="form-group">
                 <label for="exampleFormControlInput1">Your Wallet Address*</label>
                 <input required type="text" name="wallet_address" class="form-control" id="exampleFormControlInput1"

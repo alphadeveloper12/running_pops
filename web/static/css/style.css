@@ -149,9 +149,21 @@ nav {
     display: none;
 }
 
+.form_mobile {
+    display: none;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .desktop_container {
         display: none !important;
+    }
+
+    .form_mobile {
+        display: block;
+    }
+
+    .form_desktop {
+        display: none;
     }
 
     .desktop_mobile {
