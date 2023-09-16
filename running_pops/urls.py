@@ -28,5 +28,5 @@ urlpatterns = [
     path('tournament/', tournament, name="tournament"),
     path('benefits/', benefits, name="benefits"),
     path('benefits_form/', benefits_form, name="benefits_form"),
-    path('unity-game/', unity_game, name='tournament'),
+    path('season2/', unity_game, name='tournament'),
 ]
