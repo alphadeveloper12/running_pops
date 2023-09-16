@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from web.views import *
-
+from game.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
@@ -28,4 +28,5 @@ urlpatterns = [
     path('tournament/', tournament, name="tournament"),
     path('benefits/', benefits, name="benefits"),
     path('benefits_form/', benefits_form, name="benefits_form"),
+    path('unity-game/', unity_game, name='tournament'),
 ]

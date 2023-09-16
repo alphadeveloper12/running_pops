@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'web.apps.WebConfig'
+    'web.apps.WebConfig',
+    'game.apps.GameConfig'
 ]
 
 MIDDLEWARE = [
@@ -71,21 +72,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'running_pops.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_running_popsy',
-        'USER': 'dev_running_popsy',
-        'PASSWORD' : 'poPSy@12345',
-        'HOST' : 'localhost',
-        'PORT' : '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# Database
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'db_running_popsy',
+#         'USER': 'dev_running_popsy',
+#         'PASSWORD' : 'poPSy@12345',
+#         'HOST' : 'localhost',
+#         'PORT' : '',
+#     }
+# }
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
