@@ -25,10 +25,11 @@ class WalletAdmin(admin.ModelAdmin):
 
 
 class BenefitAdmin(admin.ModelAdmin):
-    list_display = ('wallet_address', 'twitter_handle', 'nft_link_url', 'collection_name', 'message')
+    list_display = ('wallet_address', 'nft_number', 'twitter_handle', 'nft_link_url', 'collection_name', 'message')
     list_filter = ('collection_name',)  # Add any filters you want.
     search_fields = ('wallet_address', 'collection_name',)  # Add fields to search by.
 
 # Register the Wallet model and its admin class
 admin.site.register(Wallet, WalletAdmin)
 admin.site.register(Benefit, BenefitAdmin)
+
