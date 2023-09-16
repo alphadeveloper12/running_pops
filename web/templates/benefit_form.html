@@ -34,7 +34,8 @@
     <div style="display: flex;justify-content: center">
 
 
-        <form class="form_desktop" style="width: 50%; margin-top: 50px" method="post" action="{% url 'benefits_form' %}">
+        <form class="form_desktop" style="width: 50%; margin-top: 50px" method="post"
+              action="{% url 'benefits_form' %}">
             {% csrf_token %}
             {% if messages %}
                 <div style="background: lightgreen" class="alert alert-success">
@@ -51,8 +52,14 @@
                 >
             </div>
             <div class="form-group">
+                <label for="exampleFormControlInput1">Your NFT Number*</label>
+                <input required type="text" name="nft_number" placeholder="Running Pops #121" class="form-control"
+                       id="exampleFormControlInput1"
+                >
+            </div>
+            <div class="form-group">
                 <label for="exampleFormControlInput1">Twitter Handle</label>
-                <input type="text" class="form-control" name="twitter_handler" id="exampleFormControlInput1">
+                <input required type="text" class="form-control" name="twitter_handler" id="exampleFormControlInput1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Your NFT Link(To Be Designed)*</label>
@@ -66,7 +73,8 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Leave us a message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="6"></textarea>
+                <textarea required class="form-control" id="exampleFormControlTextarea1" name="message"
+                          rows="6"></textarea>
             </div>
             <div class="form-group">
                 <input style="background: blue; border: none!important; color: #000" type="submit" class="form-control"
@@ -92,8 +100,14 @@
                 >
             </div>
             <div class="form-group">
+                <label for="exampleFormControlInput1">Your NFT Number*</label>
+                <input required type="text" name="nft_number" placeholder="Running Pops #121" class="form-control"
+                       id="exampleFormControlInput1"
+                >
+            </div>
+            <div class="form-group">
                 <label for="exampleFormControlInput1">Twitter Handle</label>
-                <input type="text" class="form-control" name="twitter_handler" id="exampleFormControlInput1">
+                <input required type="text" class="form-control" name="twitter_handler" id="exampleFormControlInput1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Your NFT Link(To Be Designed)*</label>
@@ -107,7 +121,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Leave us a message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="6"></textarea>
+                <textarea required class="form-control" id="exampleFormControlTextarea1" name="message" rows="6"></textarea>
             </div>
             <div class="form-group">
                 <input style="background: blue; border: none!important; color: #000" type="submit" class="form-control"
