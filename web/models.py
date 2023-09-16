@@ -21,3 +21,5 @@ class Wallet(models.Model):
 
     def __str__(self):
         return self.wallet_address
+
+
