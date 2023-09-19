@@ -72,25 +72,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'running_pops.wsgi.application'
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db_running_popsy',
+        'USER': 'dev_running_popsy',
+        'PASSWORD' : 'poPSy@12345',
+        'HOST' : 'localhost',
+        'PORT' : '',
     }
 }
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-#
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'db_running_popsy',
-#         'USER': 'dev_running_popsy',
-#         'PASSWORD' : 'poPSy@12345',
-#         'HOST' : 'localhost',
-#         'PORT' : '',
-#     }
-# }
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 

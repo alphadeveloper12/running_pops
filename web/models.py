@@ -4,7 +4,7 @@ from django.db import models
 
 from django.db import models
 
-class Benefit(models.Model):
+class CheckBenefit(models.Model):
     wallet_address = models.CharField(max_length=1000)  # Assuming a maximum length for a wallet address.
     twitter_handle = models.CharField(max_length=1000, blank=True)  # Allowing the Twitter handle to be empty.
     nft_link_url = models.URLField()

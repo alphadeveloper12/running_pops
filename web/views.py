@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from .models import Wallet, Benefit
+from .models import Wallet, CheckBenefit
 from django.contrib import messages
 # Create your views here.
 
@@ -28,7 +28,7 @@ def benefits(request):
 def benefits_form(request):
     if request.method == 'POST':
         data = request.POST  # Use request.POST (uppercase) to access the POST data
-        benefit = Benefit(wallet_address=data['wallet_address'],nft_number=data['nft_number'],twitter_handle=data['twitter_handler'],nft_link_url=data['nft_link'],collection_name=data['collection_name'],message=data['message'])
+        benefit = CheckBenefit(wallet_address=data['wallet_address'],nft_number=data['nft_number'],twitter_handle=data['twitter_handler'],nft_link_url=data['nft_link'],collection_name=data['collection_name'],message=data['message'])
         try:
             benefit.save()
             messages.success(request, 'your details got submitted, now our team will start the process transforming your 2D pfp into a 3D pfp, you will get notified by email once its done to claim it.')
@@ -55,3 +55,4 @@ def submit_wallet(request):
         return redirect('whitelist')
     else:
         return render(request, 'whitelist.html')
+
