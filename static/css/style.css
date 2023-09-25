@@ -1,0 +1,507 @@
+.home_body {
+    background-image: url('../images/main_screen/BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background: #8AC3E0;
+}
+
+#actionPlan img {
+    height: 10vh;
+}
+
+#playNow img {
+    height: 15vh;
+}
+
+#cloud1 img {
+    height: 10vh;
+}
+
+#cloud2 img {
+    height: 10vh;
+}
+
+#main_img img {
+    height: 60vh;
+}
+
+#download img {
+    height: 10vh;
+}
+
+#claim_benefits img {
+    height: 15vh;
+}
+
+#about_us img {
+    height: 20vh;
+}
+
+.nav-item a img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-item a {
+    cursor: pointer;
+}
+
+.whitelist_body {
+    background-image: url(../images/whitelist/background.png);
+    height: 100vh !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#magic_sticks img {
+    width: 100%;
+    padding: 20px;
+}
+
+#running_pops {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#running_pops img {
+    height: 30px;
+}
+
+#version img {
+    height: 70px;
+}
+
+#form {
+    z-index: 10;
+}
+
+#form img {
+    height: 35px;
+    margin-top: 35px;
+}
+
+#main_element {
+    /*height: 40%;*/
+    display: flex;
+    justify-content: end;
+}
+
+#main_element img {
+    height: 40%;
+}
+
+#background_mountain {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+#swords {
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
+    right: 0;
+}
+
+#swords img {
+    height: 300px;
+}
+
+.alert-success {
+    background: none;
+    border: none;
+}
+
+.alert-success ul {
+    list-style: none;
+
+}
+
+.mobile_container {
+    display: none;
+}
+
+.about_mobile {
+    display: none;
+}
+
+.action_mobile {
+    display: none;
+}
+
+.action_development_div h3 {
+    line-height: 28px;
+}
+
+.desktop_mobile {
+    display: none;
+}
+
+.form_mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .desktop_container {
+        display: none !important;
+    }
+
+    .form_mobile {
+        display: block;
+    }
+
+    .form_desktop {
+        display: none;
+    }
+
+    .desktop_mobile {
+        display: block;
+    }
+
+    .desktop_benefits {
+        display: none;
+    }
+
+    .action_desktop {
+        display: none;
+    }
+
+    .action_mobile {
+        display: block;
+    }
+
+    .about_ul li {
+        margin-bottom: 80px !important;
+    }
+
+    .about_ul li p {
+        font-size: 14px !important;
+    }
+
+    .about_ul li span {
+        font-size: 14px !important;
+    }
+
+    .about_play_button {
+        height: 30px !important;
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+
+    .about_download_button {
+        height: 30px !important;
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+
+    .about_detail_ul li p {
+        font-size: 10px !important;
+        /*font-weight: 700;*/
+    }
+
+    .about_desktop {
+        display: none;
+    }
+
+    .about_mobile {
+        display: block;
+    }
+
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+    }
+
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: inherit;
+    }
+
+    .navbar-collapse ul li {
+        margin: 5px;
+    }
+
+    .mobile_container {
+        display: block;
+    }
+
+    #swords {
+        top: 70%;
+        /* right: 50%; */
+    }
+
+    #swords img {
+        height: 150px;
+    }
+
+    #running_pops img {
+        height: 10px;
+    }
+
+    #version img {
+        height: 30px;
+    }
+
+    #form img {
+        height: 20px;
+    }
+}
+
+#version {
+    margin-bottom: 50px;
+}
+
+/*MObile New*/
+#actionPlan_mobile {
+    display: flex;
+    justify-content: start;
+}
+
+#actionPlan_mobile img {
+    height: 10vh;
+}
+
+#playNow_mobile {
+    display: flex;
+    justify-content: end;
+}
+
+#playNow_mobile img {
+    height: 15vh;
+}
+
+#cloud1_mobile img {
+    height: 5vh;
+}
+
+#cloud2_mobile img {
+    height: 5vh;
+}
+
+#cloud2_mobile {
+    display: flex;
+    justify-content: end;
+}
+
+#main_img_mobile img {
+    height: 15vh;
+}
+
+#download_mobile {
+    display: flex;
+    justify-content: start;
+}
+
+#claim_benefits_mobile {
+    display: flex;
+    justify-content: center;
+}
+
+#about_us_mobile {
+    display: flex;
+    justify-content: end;
+}
+
+#download_mobile img {
+    height: 8vh;
+}
+
+#claim_benefits_mobile img {
+    height: 8vh;
+}
+
+#about_us_mobile {
+    height: 8vh;
+}
+
+.about_hero {
+    background-image: url(../images/about/desktop/bg.png) !important;
+    background-size: cover;
+}
+
+.about_hero_mobile {
+    background-image: url(../images/about/mobile/bg.png) !important;
+    background-size: cover;
+}
+
+.about_body {
+    background: none !important;
+}
+
+.about_hero_main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about_play_button {
+    background: #04ccff;
+
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+}
+
+.about_download_button {
+    background: #d06444;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    margin-left: 50px;
+}
+
+.about_tournament_row {
+    background-image: url(../images/about/desktop/3rd_screen/bg.png);
+    /*height: 100%;*/
+    background-size: cover;
+    padding-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.about_tournament_row_mobile {
+    background-image: url(../images/about/mobile/3rd_screen/bg.png);
+    /*height: 100%;*/
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.about_ul {
+    list-style: none;
+}
+
+.about_ul li {
+    margin-bottom: 70px;
+}
+
+.about_ul li:nth-child(1) {
+    margin-top: 30px;
+}
+
+.about_ul li span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about_ul li p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about_detail_ul {
+    margin-right: 15px;
+}
+
+.about_detail_ul li {
+    margin: 35px 0px;
+    list-style: none;
+}
+
+.about_detail_ul li p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.action_hero_div {
+    background-image: url(../images/action/desktop/1st/bg.png);
+    background-size: cover;
+
+}
+
+.action_evalution_div {
+    background-image: url(../images/action/desktop/2nd/bg.png);
+    background-size: cover;
+}
+
+.action_development_div {
+    background-image: url(../images/action/desktop/3rd/bg.png);
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.development_div {
+    background-image: url(../images/action/desktop/3rd/Layer-1.png);
+    background-size: cover;
+    margin: 0px 50px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.development_div_mobile {
+    background: #fff;
+    background-size: cover;
+    margin: 0px 50px;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.action_bottom_div {
+    background-image: url(../images/action/desktop/4th/bg.png);
+    background-size: cover;
+}
+
+.about_div_text p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about_div_text span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about_div_text_detail p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about_div_text {
+    padding: 20px;
+}
+
+.about_div_text_detail {
+    padding: 20px;
+}
+
+form .form-group {
+    margin: 20px;
+}
+
+form .form-group label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+form .form-group input {
+    background: #000;
+    border: 1px solid #fff !important;
+}
+
+form .form-group textarea {
+    background: #000;
+    border: 1px solid #fff;
+}
